@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sada Bahar Restaurant & Dhaba | NH-2 Gopalpur, Sherghati</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-dhaba { font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px; }
+    .glass-card { background: rgba(24, 30, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-nav { background: rgba(13, 17, 23, 0.9); backdrop-filter: blur(16px); }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    @keyframes pulse-ring { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.03); opacity: 0.9; } }
+    .pulse-btn { animation: pulse-ring 2.2s infinite; }
+  </style>
+</head>
+<body class="bg-[#0b0e14] text-slate-100 min-h-screen pb-28 selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP DEVELOPER NOTICE BAR -->
+  <aside aria-label="Developer Pitch" class="bg-gradient-to-r from-orange-600 via-amber-600 to-emerald-600 text-white text-xs py-2 px-3 sm:px-4 shadow-lg sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center space-x-2 truncate">
+        <span class="bg-black/40 text-orange-200 font-extrabold px-2 py-0.5 rounded text-[10px] tracking-wider uppercase border border-orange-400/30">HIGHWAY PROTOTYPE</span>
+        <span class="truncate font-medium text-[11px] sm:text-xs">Specially Crafted for <b>SADA BAHAR RESTAURANT & DHABA</b></span>
+      </div>
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <span class="hidden md:inline text-[11px] text-amber-100">Live Website Banwayen: <b>Ashish Sharma</b></span>
+        <a href="https://wa.me/918292794750?text=Namaste%20Ashish%20ji,%20Sada%20Bahar%20Restaurant%20ke%20liye%20website%20banwani%20hai" class="bg-white text-slate-950 hover:bg-orange-100 font-bold px-2.5 py-1 rounded-full text-[11px] flex items-center gap-1.5 shadow transition">
+          <i class="fa-brands fa-whatsapp text-emerald-600 font-bold"></i> 8292794750
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION -->
+  <header class="glass-nav border-b border-slate-800/80 sticky top-[33px] sm:top-[35px] z-40 transition">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white font-black text-xl shadow-md">
+          <i class="fa-solid fa-truck-monster"></i>
+        </div>
+        <div>
+          <h1 class="font-dhaba text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight">SADA BAHAR RESTAURANT</h1>
+          <p class="text-[11px] text-orange-400 font-medium tracking-wide flex items-center gap-1">
+            <i class="fa-solid fa-road text-[10px]"></i> NH-2, Gopalpur, Sherghati (24x7 Open)
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="openPreOrderModal()" class="hidden sm:flex items-center gap-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-orange-300 border border-orange-500/30 px-3 py-1.5 rounded-lg transition font-medium">
+          <i class="fa-solid fa-car-side text-orange-400"></i> Highway Pre-Order
+        </button>
+        <a href="tel:07739361521" class="bg-orange-500 hover:bg-orange-400 text-slate-950 text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-phone"></i> 077393 61521
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-[#151a24] to-[#0b0e14] border-b border-slate-800/60 px-4 pt-8 pb-10">
+    <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-orange-500/10 border border-orange-500/30 text-orange-400 mb-3">
+        <i class="fa-solid fa-clock text-orange-400"></i> 24 Ghante Shuddh Khana Aur Fast Parcel Service
+      </span>
+      <h2 class="font-dhaba text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-none">
+        DESI DHABA TASTE & <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-yellow-500">HIGHWAY FAMILY DINING</span>
+      </h2>
+      <p class="text-slate-300 text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+        NH-2 Sherghati se guzarne wale yatri aur local parivar ke liye: Tadka Dal, Desi Ghee Handi Meat, Special Thali aur garma-garam Tandoori Roti.
+      </p>
+
+      <!-- Highway Badges -->
+      <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-lg mx-auto mt-6 text-center">
+        <div class="glass-card p-2 sm:p-3 rounded-xl border-orange-500/20">
+          <div class="text-orange-400 font-bold text-sm sm:text-base flex items-center justify-center gap-1"><i class="fa-solid fa-truck-fast text-xs"></i> 15 Min</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Quick Parcel Ready</div>
+        </div>
+        <div class="glass-card p-2 sm:p-3 rounded-xl border-orange-500/20">
+          <div class="text-emerald-400 font-bold text-sm sm:text-base flex items-center justify-center gap-1"><i class="fa-solid fa-shield-halved text-xs"></i> 24x7</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Highway Service</div>
+        </div>
+        <div class="glass-card p-2 sm:p-3 rounded-xl border-orange-500/20">
+          <div class="text-amber-400 font-bold text-sm sm:text-base flex items-center justify-center gap-1"><i class="fa-solid fa-square-parking text-xs"></i> Free</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Car & Bus Parking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH & CATEGORY SELECTOR -->
+  <section class="sticky top-[86px] sm:top-[90px] z-30 glass-nav border-b border-slate-800/80 py-3 shadow-md">
+    <div class="max-w-5xl mx-auto px-4 space-y-2.5">
+      <div class="flex items-center gap-2">
+        <div class="relative flex-1">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+          <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search Dhaba Special Thali, Dal Fry, Handi Meat..." class="w-full pl-8 pr-3 py-1.5 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-orange-500">
+        </div>
+        <div class="flex items-center bg-slate-900 border border-slate-700 rounded-xl p-1 text-[11px]">
+          <button id="veg-all" onclick="setDietFilter('all')" class="px-2 py-0.5 rounded-lg font-bold bg-orange-500 text-slate-950">All</button>
+          <button id="veg-only" onclick="setDietFilter('veg')" class="px-2 py-0.5 rounded-lg text-emerald-400 font-medium hover:text-white">Veg</button>
+          <button id="nonveg-only" onclick="setDietFilter('nonveg')" class="px-2 py-0.5 rounded-lg text-red-400 font-medium hover:text-white">Non-Veg</button>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 overflow-x-auto scrollbar-hide text-xs pt-1">
+        <button onclick="filterCategory('all', this)" class="cat-pill active-cat px-3.5 py-1.5 rounded-xl font-bold bg-orange-500 text-slate-950 whitespace-nowrap transition">Sabhi Dishes</button>
+        <button onclick="filterCategory('thali', this)" class="cat-pill px-3.5 py-1.5 rounded-xl font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap transition">Special Thali & Combos</button>
+        <button onclick="filterCategory('handi', this)" class="cat-pill px-3.5 py-1.5 rounded-xl font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap transition">Handi & Non-Veg</button>
+        <button onclick="filterCategory('dhaba_veg', this)" class="cat-pill px-3.5 py-1.5 rounded-xl font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap transition">Dhaba Dal & Sabzi</button>
+        <button onclick="filterCategory('tandoor', this)" class="cat-pill px-3.5 py-1.5 rounded-xl font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap transition">Tandoori Roti & Rice</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU GRID -->
+  <main class="max-w-5xl mx-auto px-4 mt-6">
+    <div id="empty-state" class="hidden text-center py-12 glass-card rounded-2xl">
+      <i class="fa-solid fa-bowl-food text-slate-500 text-4xl mb-3"></i>
+      <h3 class="text-sm font-bold text-slate-300">Dish nahi mili</h3>
+      <p class="text-xs text-slate-500 mt-1">Dusra dish name daal kar search karein.</p>
+    </div>
+
+    <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Dishes dynamically loaded via JS -->
+    </div>
+  </main>
+
+  <!-- HIGHWAY PRE-ORDER CTA & ASHISH SHARMA BANNER -->
+  <section class="max-w-5xl mx-auto px-4 mt-12 space-y-6">
+    <!-- Travel Pre-order Banner -->
+    <div class="glass-card rounded-2xl p-6 border-orange-500/30 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="text-xs text-orange-400 font-bold uppercase tracking-wider">NH-2 Travelers Express</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Car ya Bus Pahunchne Se 15 Min Pehle Order Karein</h3>
+        <p class="text-slate-400 text-xs mt-1">Highway par rukte hi garam parcel ya table ready milega, bina kisi intezar ke.</p>
+      </div>
+      <button onclick="openPreOrderModal()" class="bg-orange-500 hover:bg-orange-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 whitespace-nowrap transition">
+        <i class="fa-solid fa-clock-rotate-left"></i> Advance Pre-Order Form
+      </button>
+    </div>
+
+    <!-- Pitch Card to Sada Bahar Owner -->
+    <div class="rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-slate-900 via-slate-850 to-emerald-950/60 border border-emerald-500/30 shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="max-w-xl">
+        <span class="inline-block bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-2.5 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider mb-2">
+          HIGHWAY RESTAURANT GROWTH
+        </span>
+        <h3 class="text-xl sm:text-2xl font-bold text-white">
+          NH-2 ke Hazaron Gaadiyon Ka Khana Order Apne WhatsApp Par Lein
+        </h3>
+        <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+          Highway yatri Google par dhaba search karke direct menu dekhna chahte hain. Aisi simple aur fast website se aapka parcel order 3 guna badh sakta hai.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 mt-4 text-xs text-slate-300 font-medium">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Google Maps Par Live Link</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Zero Commission Orders</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> 1 Din Me Setup</span>
+        </div>
+      </div>
+
+      <div class="glass-card p-4 rounded-xl border-emerald-500/30 flex flex-col items-center text-center w-full md:w-auto min-w-[240px]">
+        <div class="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 text-xl font-bold mb-2">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <span class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Web Developer</span>
+        <h4 class="text-base font-extrabold text-white mt-0.5">Ashish Sharma</h4>
+        <span class="text-xs text-orange-400 font-bold mb-3">📞 8292794750</span>
+        
+        <a href="https://wa.me/918292794750?text=Namaste%20Ashish%20ji,%20Sada%20Bahar%20Restaurant%20demo%20dekha.%20Website%20kaise%20setup%20hogi%20batayein." target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2 px-4 rounded-lg text-xs flex items-center justify-center gap-2 transition shadow-md">
+          <i class="fa-brands fa-whatsapp text-sm font-bold"></i> Contact Ashish Sharma
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING PARCEL DRAWER -->
+  <aside aria-label="Highway Order Basket" id="cart-drawer" class="fixed bottom-0 left-0 right-0 glass-nav border-t border-slate-700/80 p-3 sm:p-4 z-40 transition-all duration-300 transform translate-y-full">
+    <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-orange-500 text-slate-950 flex items-center justify-center font-bold text-lg shadow-lg relative">
+          <i class="fa-solid fa-box"></i>
+          <span id="badge-count" class="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-slate-950">0</span>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Highway Parcel Bill</div>
+          <div class="text-base sm:text-lg font-extrabold text-orange-400">₹<span id="total-price">0</span></div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="clearCart()" class="text-slate-400 hover:text-red-400 text-xs px-2.5 py-2 transition" title="Khali Karein">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+        <button onclick="sendHighwayOrder()" class="pulse-btn bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-xl transition">
+          <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Order (Sada Bahar)
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- HIGHWAY STOP PRE-ORDER MODAL -->
+  <div id="preorder-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-md w-full p-6 rounded-2xl relative border-orange-500/40">
+      <button onclick="closePreOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-sm">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="flex items-center gap-2 text-orange-400 text-sm font-bold mb-1">
+        <i class="fa-solid fa-car-tunnel"></i> NH-2 Quick Pickup
+      </div>
+      <h3 class="text-xl font-bold text-white">Highway Advance Pre-Order</h3>
+      <p class="text-slate-400 text-xs mt-1">Car ya Bus number aur pahunchne ka time enter karein, dukan parcel ready rakhegi.</p>
+
+      <form onsubmit="handlePreOrderSubmit(event)" class="mt-4 space-y-3">
+        <div>
+          <label class="block text-[11px] text-slate-300 font-semibold mb-1">Aapka Naam</label>
+          <input type="text" id="pre-name" required placeholder="e.g. Vikas Singh" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500">
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[11px] text-slate-300 font-semibold mb-1">Gaadi Number / Type</label>
+            <input type="text" id="pre-vehicle" required placeholder="e.g. Swift / BR 02 AB 1234" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500">
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-300 font-semibold mb-1">Kab Pahuchenge?</label>
+            <input type="time" id="pre-time" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500">
+          </div>
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-300 font-semibold mb-1">Order Details / Requirement</label>
+          <input type="text" id="pre-items" required placeholder="e.g. 2 Sada Bahar Thali + 2 Tea" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500">
+        </div>
+        <button type="submit" class="w-full mt-2 bg-orange-500 hover:bg-orange-400 text-slate-950 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition">
+          <i class="fa-brands fa-whatsapp font-bold text-sm"></i> Send Advance Order on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // SADA BAHAR RESTAURANT & DHABA SPECIAL MENU
+    const dishes = [
+      {
+        id: "sb1",
+        title: "Sada Bahar Special Deluxe Thali",
+        category: "thali",
+        diet: "veg",
+        price: 180,
+        badge: "Highway Bestseller",
+        desc: "Paneer Sabzi, Dal Fry, Seasonal Veg, Jeera Rice, 4 Butter Tandoori Roti, Papad, Salad & Gulab Jamun.",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb2",
+        title: "Driver & Travel Express Thali",
+        category: "thali",
+        diet: "veg",
+        price: 120,
+        badge: "Value Pack",
+        desc: "Tadka Dal, Aloo Gobhi, 4 Garma Garam Roti, Rice aur Hari Mirch Salad.",
+        img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb3",
+        title: "Desi Ghee Handi Mutton (4 Pcs)",
+        category: "handi",
+        diet: "nonveg",
+        price: 340,
+        badge: "Authentic Dhaba Style",
+        desc: "Mitti ki handi me khada lasun aur shuddh masalon ke sath dhaba style packed mutton curry.",
+        img: "https://images.unsplash.com/photo-1545247181-516773ca83f3?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb4",
+        title: "Dhaba Chicken Kadhai Gravy",
+        category: "handi",
+        diet: "nonveg",
+        price: 240,
+        badge: "Highway Special",
+        desc: "Thick spicy gravy with juicy chicken, capsicum aur whole red chillies.",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb5",
+        title: "Shahi Paneer Desi Ghee",
+        category: "dhaba_veg",
+        diet: "veg",
+        price: 170,
+        badge: "Dhaba Classic",
+        desc: "Creamy kaju gravy me soft paneer cubes, pure ghee me bani hui sabzi.",
+        img: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb6",
+        title: "Yellow Dal Tadka Double Chaunk",
+        category: "dhaba_veg",
+        diet: "veg",
+        price: 120,
+        badge: "Lasun Tadka",
+        desc: "Heeng, jeera, khada lasun aur sukhi laal mirch se lagi shuddh arhar dal.",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb7",
+        title: "Sev Tamatar Dhaba Style",
+        category: "dhaba_veg",
+        diet: "veg",
+        price: 110,
+        badge: "Spicy Tangy",
+        desc: "Chatpati tamatar ki gravy me crispy besan sev ka swad.",
+        img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb8",
+        title: "Butter Tandoori Roti (4 Pcs)",
+        category: "tandoor",
+        diet: "veg",
+        price: 40,
+        badge: "Hot Clay Oven",
+        desc: "Mitti ke tandoor ki kurkuri wheat rotis brushed with Amul butter.",
+        img: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        id: "sb9",
+        title: "Jeera Fried Rice",
+        category: "tandoor",
+        diet: "veg",
+        price: 90,
+        badge: "Basmati Rice",
+        desc: "Ghee aur roasted jeera me tossed lambe daane wala basmati chawal.",
+        img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&auto=format&fit=crop&q=80"
+      }
+    ];
+
+    let cart = {};
+    let activeCategory = 'all';
+    let activeDiet = 'all';
+    let searchQuery = '';
+
+    function renderDishes() {
+      const container = document.getElementById('menu-grid');
+      const emptyState = document.getElementById('empty-state');
+
+      const filtered = dishes.filter(item => {
+        const matchCategory = activeCategory === 'all' || item.category === activeCategory;
+        const matchDiet = activeDiet === 'all' || item.diet === activeDiet;
+        const matchSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                            item.desc.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchCategory && matchDiet && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      container.innerHTML = filtered.map(dish => {
+        const qty = cart[dish.id] || 0;
+        return `
+          <div class="glass-card rounded-2xl overflow-hidden hover:border-orange-500/40 transition-all duration-300 flex flex-col justify-between group">
+            <div class="relative h-44 sm:h-48 overflow-hidden bg-slate-950">
+              <img src="${dish.img}" alt="${dish.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&auto=format&fit=crop&q=80'">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+              
+              <div class="absolute top-3 left-3 flex items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-md ${dish.diet === 'veg' ? 'bg-emerald-600 text-white' : 'bg-red-600 text-white'}">
+                  <span class="w-1.5 h-1.5 rounded-full ${dish.diet === 'veg' ? 'bg-emerald-200' : 'bg-red-200'}"></span>
+                  ${dish.diet === 'veg' ? 'VEG' : 'NON-VEG'}
+                </span>
+                ${dish.badge ? `<span class="bg-black/70 backdrop-blur-sm text-orange-400 border border-orange-500/30 text-[10px] font-semibold px-2 py-0.5 rounded-md">${dish.badge}</span>` : ''}
+              </div>
+
+              <div class="absolute bottom-3 right-3 bg-orange-500 text-slate-950 font-black text-sm px-2.5 py-1 rounded-lg shadow-lg">
+                ₹${dish.price}
+              </div>
+            </div>
+
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-white text-base leading-snug group-hover:text-orange-400 transition-colors">${dish.title}</h4>
+                <p class="text-slate-400 text-xs mt-1.5 line-clamp-2 leading-relaxed">${dish.desc}</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-4 pt-3 border-t border-slate-800/80">
+                <span class="text-xs text-slate-400 font-medium">Packing: Dhaba Parcel</span>
+                
+                ${qty > 0 ? `
+                  <div class="flex items-center bg-slate-900 border border-orange-500/50 rounded-xl overflow-hidden shadow">
+                    <button onclick="changeQty('${dish.id}', -1)" class="w-8 h-8 flex items-center justify-center bg-orange-500/20 hover:bg-orange-500/30 text-orange-400 font-bold transition">-</button>
+                    <span class="w-8 text-center text-xs font-black text-white">${qty}</span>
+                    <button onclick="changeQty('${dish.id}', 1)" class="w-8 h-8 flex items-center justify-center bg-orange-500/20 hover:bg-orange-500/30 text-orange-400 font-bold transition">+</button>
+                  </div>
+                ` : `
+                  <button onclick="changeQty('${dish.id}', 1)" class="bg-orange-500 hover:bg-orange-400 text-slate-950 font-bold px-4 py-1.5 rounded-xl text-xs flex items-center gap-1.5 shadow transition">
+                    <i class="fa-solid fa-plus text-[10px]"></i> Add
+                  </button>
+                `}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterCategory(cat, btn) {
+      activeCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(p => {
+        p.classList.remove('active-cat', 'bg-orange-500', 'text-slate-950');
+        p.classList.add('bg-slate-800', 'text-slate-300');
+      });
+      btn.classList.remove('bg-slate-800', 'text-slate-300');
+      btn.classList.add('active-cat', 'bg-orange-500', 'text-slate-950');
+      renderDishes();
+    }
+
+    function setDietFilter(diet) {
+      activeDiet = diet;
+      ['veg-all', 'veg-only', 'nonveg-only'].forEach(id => {
+        const btn = document.getElementById(id);
+        btn.classList.remove('bg-orange-500', 'text-slate-950', 'bg-emerald-600', 'bg-red-600', 'text-white');
+      });
+
+      if (diet === 'all') {
+        document.getElementById('veg-all').classList.add('bg-orange-500', 'text-slate-950');
+      } else if (diet === 'veg') {
+        document.getElementById('veg-only').classList.add('bg-emerald-600', 'text-white');
+      } else {
+        document.getElementById('nonveg-only').classList.add('bg-red-600', 'text-white');
+      }
+      renderDishes();
+    }
+
+    function handleSearch() {
+      searchQuery = document.getElementById('search-input').value;
+      renderDishes();
+    }
+
+    function changeQty(id, delta) {
+      if (!cart[id]) cart[id] = 0;
+      cart[id] += delta;
+      if (cart[id] <= 0) delete cart[id];
+      renderDishes();
+      updateDrawer();
+    }
+
+    function clearCart() {
+      cart = {};
+      renderDishes();
+      updateDrawer();
+    }
+
+    function updateDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const badge = document.getElementById('badge-count');
+      const totalSpan = document.getElementById('total-price');
+
+      let count = 0;
+      let total = 0;
+
+      for (let id in cart) {
+        const dish = dishes.find(d => d.id === id);
+        count += cart[id];
+        total += dish.price * cart[id];
+      }
+
+      badge.innerText = count;
+      totalSpan.innerText = total;
+
+      if (count > 0) {
+        drawer.classList.remove('translate-y-full');
+      } else {
+        drawer.classList.add('translate-y-full');
+      }
+    }
+
+    function sendHighwayOrder() {
+      let orderText = "*HIGHWAY PARCEL ORDER - SADA BAHAR RESTAURANT*%0A";
+      orderText += "Location: NH-2 Gopalpur, Sherghati%0A";
+      orderText += "-----------------------------%0A";
+      let total = 0;
+
+      for (let id in cart) {
+        const dish = dishes.find(d => d.id === id);
+        const itemTotal = dish.price * cart[id];
+        total += itemTotal;
+        orderText += `• ${dish.title} x ${cart[id]} = ₹${itemTotal}%0A`;
+      }
+
+      orderText += "-----------------------------%0A";
+      orderText += `*Total Parcel Bill:* ₹${total}%0A`;
+      orderText += "*Order Type:* Highway Stop / Takeaway%0A";
+      orderText += "%0AKripya order confirm karein aur parcel ready karne me kitna samay lagega batayein.";
+
+      // Target Sada Bahar WhatsApp: +91 77393 61521
+      window.open(`https://wa.me/917739361521?text=${orderText}`, '_blank');
+    }
+
+    // Modal Control
+    function openPreOrderModal() {
+      document.getElementById('preorder-modal').classList.remove('hidden');
+    }
+    function closePreOrderModal() {
+      document.getElementById('preorder-modal').classList.add('hidden');
+    }
+    function handlePreOrderSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('pre-name').value;
+      const vehicle = document.getElementById('pre-vehicle').value;
+      const time = document.getElementById('pre-time').value;
+      const items = document.getElementById('pre-items').value;
+
+      let text = `*HIGHWAY ADVANCE PRE-ORDER (SADA BAHAR)*%0A`;
+      text += `• Name: ${name}%0A`;
+      text += `• Vehicle No/Type: ${vehicle}%0A`;
+      text += `• Arrival Time: ${time}%0A`;
+      text += `• Required Food: ${items}%0A%0A`;
+      text += `Hum highway par aa rahe hain, kripya parcel ya table ready rakhein.`;
+
+      window.open(`https://wa.me/917739361521?text=${text}`, '_blank');
+      closePreOrderModal();
+    }
+
+    // Initial render
+    renderDishes();
+  </script>
+</body>
+</html>
